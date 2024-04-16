@@ -7,7 +7,7 @@ userid=$(id -u)
 if [ $userid -ne 0 ]
 then
     echo "This user is not a sudo user. Please get the sudo access"
-    sudo su -
+    exit 1
 fi
 
 # This comamnd will be executed if the user is 0 and installs the mysql.
