@@ -23,6 +23,8 @@ if [ $userid -ne 0 ]
 then
     echo "User is not sudo"
     exit 1
+    else
+        echo "You are sudo user. You can proceseed to install the packages."
 fi
 
 for i in $@
