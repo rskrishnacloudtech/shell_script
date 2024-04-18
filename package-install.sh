@@ -1,7 +1,7 @@
 #!/bin/bash
 
 userid=$(id -u)
-timestamp=$(date +%F-%M-%H-%S)
+timestamp=$(date +%F-%H-%M-%S)
 filename=$(echo $0 | cut -d "." -f1)
 logfile=/tmp/$filename-$timestamp.log
 R="\e[31m"
@@ -34,7 +34,7 @@ do
         echo -e "$i is already installed... $Y SKIPPING $N"
         
         else
-            dnf install $i -y &>> $logigle
+            dnf install $i -y &>> $logfile
             validate_installation $? "Installation of $i"
     fi
 done
