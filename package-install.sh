@@ -1,6 +1,6 @@
 #!/bin/bash
 
-userid=$(is -u)
+userid=$(id -u)
 timestamp=$(date +%F-%M-%H-%S)
 filename=$(echo $0 | cut -d "." -f1)
 logfile=/tmp/$filename-$timestamp.log
