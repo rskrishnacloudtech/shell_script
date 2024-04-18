@@ -9,19 +9,20 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 
-if [ $userid -ne 0 ]
-then
-    echo "User is not sudo"
-    exit 1
-fi
 validate_installation(){
     if [ $1 -ne 0]
     then
         echo -e "$2... $R FAILURE $N"
         exit 1
-        else
-            echo -e "$2... $G SUCCESS $N"
-}
+    else
+        echo -e "$2... $G SUCCESS $N"
+    }
+
+if [ $userid -ne 0 ]
+then
+    echo "User is not sudo"
+    exit 1
+fi
 
 for i in $@
 do
