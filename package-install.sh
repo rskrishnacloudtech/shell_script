@@ -16,6 +16,7 @@ validate_installation(){
         exit 1
     else
         echo -e "$2... $G SUCCESS $N"
+    fi
     }
 
 if [ $userid -ne 0 ]
