@@ -11,7 +11,7 @@ then
 fi
 
 # This comamnd will be executed if the user is 0 and installs the mysql.
-dnf install mysql -y
+dnfff install mysql -y
 
 # This will check that status of above command. If not 0 then it will print the message and exit here and dont execute other steps.
 if [ $? -ne 0 ]

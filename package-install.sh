@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -e
+#set -e
 userid=$(id -u)
 timestamp=$(date +%F-%H-%M-%S)
 filename=$(echo $0 | cut -d "." -f1)
