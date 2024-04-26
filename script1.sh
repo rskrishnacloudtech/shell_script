@@ -3,7 +3,7 @@
 VAR="This is the variable from script11"
 #pid=$(echo $$)
 
-echo "$VAR"
+echo "Script1 variable: $VAR"
 echo "PID of the script1 is: $$"
 
 
