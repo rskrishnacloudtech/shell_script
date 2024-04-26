@@ -1,6 +1,11 @@
 #!/bin/bash
 
 set -e
+
+failure(){
+    echo "Failed at line: $1, command causing the error is:$2"
+}
+trap 'failure $LINE "$Command"' ERR
 # This will run id -u command and get the id of the user and stores it in userid variable.
 userid=$(id -u)
 
