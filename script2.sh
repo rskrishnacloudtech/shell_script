@@ -1,6 +1,7 @@
 #!/bin/bash
 
 VAR="This is the variable from script2"
+chmod +x script1.sh
 
 echo "Before calling other script: $VAR"
 echo "This the pid of the sript 2: $$"
