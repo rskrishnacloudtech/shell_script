@@ -30,7 +30,7 @@ fi
 for i in $@
 do
     echo "Package to install: $i"
-    dnf list installed $i &>> $logfile
+    dnrrf list installed $i &>> $logfile
     if [ $? -eq 0 ]
     then
         echo -e "$i is already installed... $Y SKIPPING $N"
