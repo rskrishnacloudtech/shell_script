@@ -1,5 +1,6 @@
 #!/bin/bash
 
+set -e
 # This will run id -u command and get the id of the user and stores it in userid variable.
 userid=$(id -u)
 
